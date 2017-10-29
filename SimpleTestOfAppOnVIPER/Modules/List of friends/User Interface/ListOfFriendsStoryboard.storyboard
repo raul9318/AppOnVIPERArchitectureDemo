@@ -14,7 +14,13 @@
         <scene sceneID="NSV-rb-XEN">
             <objects>
                 <viewController id="9Ju-KB-tPn" customClass="FriendsListViewController" customModule="SimpleTestOfAppOnVIPER" customModuleProvider="target" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="OY4-Ae-Waz"/>
+                    <navigationItem key="navigationItem" id="OY4-Ae-Waz">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="ZvS-nt-jAx">
+                            <connections>
+                                <action selector="addButtonAction:" destination="9Ju-KB-tPn" id="4Jp-va-rn2"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="noDataView" destination="QDP-eg-Arb" id="dSU-RA-tdr"/>
                         <outlet property="tableView" destination="NdE-GR-UmN" id="sXe-AI-L8B"/>

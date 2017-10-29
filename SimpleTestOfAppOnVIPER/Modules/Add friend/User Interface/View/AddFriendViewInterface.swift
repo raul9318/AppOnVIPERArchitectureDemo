@@ -10,4 +10,5 @@ import Foundation
 
 protocol AddFriendViewInterface: class {
     func showSaveDoneAlert()
+    func showNameErrorAlert()
 }

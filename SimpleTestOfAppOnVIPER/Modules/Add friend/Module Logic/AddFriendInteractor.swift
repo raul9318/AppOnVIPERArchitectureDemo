@@ -15,6 +15,12 @@ class AddFriendInteractor: NSObject {
 // MARK: - AddFriendInteractorInput
 extension AddFriendInteractor: AddFriendInteractorInput {
     func saveFriendWith(name: String, age: Int) {
+        guard !name.isEmpty else {
+            // TODO: enum error
+            output?.saveWithError()
+            return
+        }
+        
         FriendsDataManager.shared.addFriendWith(name: name, age: age)
         output?.friendSaved()
     }

@@ -14,4 +14,5 @@ protocol AddFriendInteractorInput {
 
 protocol AddFriendInteractorOutput: class {
     func friendSaved()
+    func saveWithError() // TODO: error enum
 }

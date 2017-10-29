@@ -10,6 +10,9 @@ import UIKit
 
 class FriendsListViewController: UIViewController {
     
+    @IBAction func addButtonAction(_ sender: Any) {
+        presenter?.presentAddFriendScreen()
+    }
     @IBOutlet var noDataView: UIView!
     @IBOutlet var tableView: UITableView!
     var strongTableView: UITableView?
@@ -25,6 +28,10 @@ class FriendsListViewController: UIViewController {
         strongTableView = tableView
         
         view = strongTableView
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         
         presenter?.updateDisplayData()
     }

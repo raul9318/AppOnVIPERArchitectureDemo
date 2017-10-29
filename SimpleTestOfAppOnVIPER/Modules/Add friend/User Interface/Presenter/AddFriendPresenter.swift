@@ -28,4 +28,8 @@ extension AddFriendPresenter: AddFriendInteractorOutput {
     func friendSaved() {
         view?.showSaveDoneAlert()
     }
+    
+    func saveWithError() {
+        view?.showNameErrorAlert()
+    }
 }

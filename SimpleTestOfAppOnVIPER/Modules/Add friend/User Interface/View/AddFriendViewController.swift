@@ -24,7 +24,7 @@ class AddFriendViewController: UIViewController {
     }
     
     var age: Int {
-        let row = agePickerView.selectedRow(inComponent: 1)
+        let row = agePickerView.selectedRow(inComponent: 0)
         let age: Int = row + 1
         return age
     }
@@ -36,7 +36,7 @@ class AddFriendViewController: UIViewController {
 
         agePickerView.delegate = self
         agePickerView.dataSource = self
-        agePickerView.selectRow(17, inComponent: 1, animated: false)
+        agePickerView.selectRow(17, inComponent: 0, animated: false)
     }
 
     fileprivate func saveConfirmed() {
@@ -52,6 +52,13 @@ extension AddFriendViewController: AddFriendViewInterface {
         alertC.addAction(UIAlertAction.init(title: "OK", style: .default, handler: { (action) in
             self.presenter?.dismissModule()
         }))
+        present(alertC, animated: true, completion: nil)
+    }
+    
+    func showNameErrorAlert() {
+        // TODO: This must be in presentor
+        let alertC = UIAlertController(title: "Ошибка", message: "Заполните поле Имя", preferredStyle: .alert)
+        alertC.addAction(UIAlertAction.init(title: "OK", style: .default, handler: nil))
         present(alertC, animated: true, completion: nil)
     }
 }
