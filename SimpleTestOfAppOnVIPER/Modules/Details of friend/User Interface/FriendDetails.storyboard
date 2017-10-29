@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Данные друга-->
+        <scene sceneID="F6E-Ic-cpQ">
+            <objects>
+                <viewController id="ZHu-tf-SJW" customClass="AddFriendViewController" customModule="SimpleTestOfAppOnVIPER" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Au0-FN-7lp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QcI-if-0fJ">
+                                <rect key="frame" x="37" y="128" width="300" height="161"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" secondItem="QcI-if-0fJ" secondAttribute="width" multiplier="170:317" id="E9m-bZ-QoH"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Имя" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dtV-an-KwN">
+                                <rect key="frame" x="67" y="153.5" width="240" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I6y-jT-BuB">
+                                <rect key="frame" x="37.5" y="297" width="300" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" secondItem="I6y-jT-BuB" secondAttribute="width" multiplier="62:301" id="HI7-I4-YmD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Удалить">
+                                    <color key="titleColor" red="1" green="0.43795626240000002" blue="0.59356554189999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Имя друга" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c1S-lD-0uK">
+                                <rect key="frame" x="67" y="179" width="240" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Возраст" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dto-ch-jqL">
+                                <rect key="frame" x="67" y="217.5" width="240" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Возраст друга" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EX0-lM-5xG">
+                                <rect key="frame" x="67" y="243" width="240" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="I6y-jT-BuB" firstAttribute="centerX" secondItem="QcI-if-0fJ" secondAttribute="centerX" id="2gD-8j-hJh"/>
+                            <constraint firstItem="I6y-jT-BuB" firstAttribute="top" secondItem="QcI-if-0fJ" secondAttribute="bottom" constant="8" id="3LL-V6-cYg"/>
+                            <constraint firstItem="QcI-if-0fJ" firstAttribute="centerX" secondItem="C1o-qT-rap" secondAttribute="centerX" id="INk-Ri-OdT"/>
+                            <constraint firstItem="EX0-lM-5xG" firstAttribute="top" secondItem="QcI-if-0fJ" secondAttribute="top" multiplier="1.9" id="MlE-bM-dy5"/>
+                            <constraint firstItem="dto-ch-jqL" firstAttribute="centerX" secondItem="QcI-if-0fJ" secondAttribute="centerX" id="NxF-DQ-7zN"/>
+                            <constraint firstItem="dtV-an-KwN" firstAttribute="width" secondItem="QcI-if-0fJ" secondAttribute="width" multiplier="0.8" id="PLc-Wq-DyD"/>
+                            <constraint firstItem="c1S-lD-0uK" firstAttribute="width" secondItem="QcI-if-0fJ" secondAttribute="width" multiplier="0.8" id="RLg-tC-MQe"/>
+                            <constraint firstItem="QcI-if-0fJ" firstAttribute="width" secondItem="Au0-FN-7lp" secondAttribute="width" multiplier="0.8" id="V1h-DS-xCK"/>
+                            <constraint firstItem="I6y-jT-BuB" firstAttribute="width" secondItem="QcI-if-0fJ" secondAttribute="width" id="ZiR-LC-rRY"/>
+                            <constraint firstItem="c1S-lD-0uK" firstAttribute="top" secondItem="QcI-if-0fJ" secondAttribute="top" multiplier="1.4" id="ai5-Ua-vkU"/>
+                            <constraint firstItem="QcI-if-0fJ" firstAttribute="top" secondItem="C1o-qT-rap" secondAttribute="top" multiplier="2" id="b5y-YM-3l7"/>
+                            <constraint firstItem="dtV-an-KwN" firstAttribute="top" secondItem="QcI-if-0fJ" secondAttribute="top" multiplier="1.2" id="ckP-lZ-85o"/>
+                            <constraint firstItem="dto-ch-jqL" firstAttribute="top" secondItem="QcI-if-0fJ" secondAttribute="top" multiplier="1.7" id="dEF-Yh-Ehb"/>
+                            <constraint firstItem="EX0-lM-5xG" firstAttribute="width" secondItem="QcI-if-0fJ" secondAttribute="width" multiplier="0.8" id="gbU-md-Xaz"/>
+                            <constraint firstItem="EX0-lM-5xG" firstAttribute="centerX" secondItem="QcI-if-0fJ" secondAttribute="centerX" id="lbt-wb-q7Z"/>
+                            <constraint firstItem="dto-ch-jqL" firstAttribute="width" secondItem="QcI-if-0fJ" secondAttribute="width" multiplier="0.8" id="pa1-VL-3T3"/>
+                            <constraint firstItem="c1S-lD-0uK" firstAttribute="centerX" secondItem="QcI-if-0fJ" secondAttribute="centerX" id="sEQ-zW-eQS"/>
+                            <constraint firstItem="dtV-an-KwN" firstAttribute="centerX" secondItem="QcI-if-0fJ" secondAttribute="centerX" id="spM-kJ-Ua1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="C1o-qT-rap"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Данные друга" id="9C1-QN-mVT">
+                        <barButtonItem key="leftBarButtonItem" title="Назад" id="Kx8-08-HD5"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ITx-H7-GxV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="788" y="102.99850074962519"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gPA-ty-5Zp">
+            <objects>
+                <navigationController storyboardIdentifier="FriendDetailsNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="G0d-Ig-lNI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="F0e-p7-7dX">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ZHu-tf-SJW" kind="relationship" relationship="rootViewController" id="f9Z-2g-f3B"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bk8-Sc-7mH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2" y="103"/>
+        </scene>
+    </scenes>
+</document>

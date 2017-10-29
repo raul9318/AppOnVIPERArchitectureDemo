@@ -34,6 +34,9 @@
 		6189B1831FA5F8DD00694FBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6189B1821FA5F8DD00694FBF /* Main.storyboard */; };
 		6189B1861FA6069B00694FBF /* FriendsDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6189B1851FA6069B00694FBF /* FriendsDataManager.swift */; };
 		6189B18D1FA60B2400694FBF /* AddFriendViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6189B18C1FA60B2400694FBF /* AddFriendViewInterface.swift */; };
+		61E0BB011FA61E6C00378AF6 /* FriendDetailsViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E0BB001FA61E6C00378AF6 /* FriendDetailsViewInterface.swift */; };
+		61E0BB031FA61EE900378AF6 /* FriendDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61E0BB021FA61EE900378AF6 /* FriendDetails.storyboard */; };
+		61E0BB051FA6210F00378AF6 /* FriendDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E0BB041FA6210F00378AF6 /* FriendDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +90,9 @@
 		6189B1821FA5F8DD00694FBF /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		6189B1851FA6069B00694FBF /* FriendsDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsDataManager.swift; sourceTree = "<group>"; };
 		6189B18C1FA60B2400694FBF /* AddFriendViewInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriendViewInterface.swift; sourceTree = "<group>"; };
+		61E0BB001FA61E6C00378AF6 /* FriendDetailsViewInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDetailsViewInterface.swift; sourceTree = "<group>"; };
+		61E0BB021FA61EE900378AF6 /* FriendDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FriendDetails.storyboard; sourceTree = "<group>"; };
+		61E0BB041FA6210F00378AF6 /* FriendDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,7 +202,7 @@
 			children = (
 				6179CBC21FA5E1E200B9FFC8 /* List of friends */,
 				6179CBC31FA5E1FD00B9FFC8 /* Add friend */,
-				6179CBC41FA5E20900B9FFC8 /* Detail of friend */,
+				6179CBC41FA5E20900B9FFC8 /* Details of friend */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -221,11 +227,14 @@
 			path = "Add friend";
 			sourceTree = "<group>";
 		};
-		6179CBC41FA5E20900B9FFC8 /* Detail of friend */ = {
+		6179CBC41FA5E20900B9FFC8 /* Details of friend */ = {
 			isa = PBXGroup;
 			children = (
+				61E0BAF81FA61DC400378AF6 /* Module Logic */,
+				61E0BAF91FA61DD200378AF6 /* Module Interface */,
+				61E0BAFA1FA61DE200378AF6 /* User Interface */,
 			);
-			path = "Detail of friend";
+			path = "Details of friend";
 			sourceTree = "<group>";
 		};
 		6179CBC51FA5E23000B9FFC8 /* User Interface */ = {
@@ -345,6 +354,54 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		61E0BAF81FA61DC400378AF6 /* Module Logic */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Module Logic";
+			sourceTree = "<group>";
+		};
+		61E0BAF91FA61DD200378AF6 /* Module Interface */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Module Interface";
+			sourceTree = "<group>";
+		};
+		61E0BAFA1FA61DE200378AF6 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				61E0BAFF1FA61E4800378AF6 /* Presenter */,
+				61E0BAFB1FA61E0000378AF6 /* View */,
+				61E0BAFE1FA61E2E00378AF6 /* Router */,
+				61E0BB021FA61EE900378AF6 /* FriendDetails.storyboard */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		61E0BAFB1FA61E0000378AF6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				61E0BB001FA61E6C00378AF6 /* FriendDetailsViewInterface.swift */,
+				61E0BB041FA6210F00378AF6 /* FriendDetailsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		61E0BAFE1FA61E2E00378AF6 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		61E0BAFF1FA61E4800378AF6 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -457,6 +514,7 @@
 				617568771FA60CC700D5D445 /* AddFriend.storyboard in Resources */,
 				6179CB991FA5DDCC00B9FFC8 /* Assets.xcassets in Resources */,
 				6189B1831FA5F8DD00694FBF /* Main.storyboard in Resources */,
+				61E0BB031FA61EE900378AF6 /* FriendDetails.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,6 +542,7 @@
 				6189B1751FA5EAED00694FBF /* FriendsListModuleInterface.swift in Sources */,
 				6179CBC81FA5E2A200B9FFC8 /* FriendsListViewInterface.swift in Sources */,
 				6189B18D1FA60B2400694FBF /* AddFriendViewInterface.swift in Sources */,
+				61E0BB011FA61E6C00378AF6 /* FriendDetailsViewInterface.swift in Sources */,
 				6189B17C1FA5EDBB00694FBF /* FriendsListInteractor.swift in Sources */,
 				617568851FA6159F00D5D445 /* AddFriendInteractor.swift in Sources */,
 				6189B17F1FA5EFD400694FBF /* FriendsListWireframeInput.swift in Sources */,
@@ -497,6 +556,7 @@
 				617568801FA6145700D5D445 /* AddFriendInteractorIO.swift in Sources */,
 				6189B1861FA6069B00694FBF /* FriendsDataManager.swift in Sources */,
 				6189B1811FA5F06C00694FBF /* FriendsListRouter.swift in Sources */,
+				61E0BB051FA6210F00378AF6 /* FriendDetailsViewController.swift in Sources */,
 				6175687E1FA613D900D5D445 /* AddFriendPresenter.swift in Sources */,
 				6179CBCD1FA5E45300B9FFC8 /* FriendsListUpcomingDisplayData.swift in Sources */,
 				6189B1771FA5EBE500694FBF /* FriendsListPresenter.swift in Sources */,
