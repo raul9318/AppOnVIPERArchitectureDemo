@@ -32,6 +32,8 @@ extension FriendsListRouter: FriendsListWireFrameInput {
         
         interactor.output = presenter
         
+        router.controller = view
+        
         return navigationController
     }
     

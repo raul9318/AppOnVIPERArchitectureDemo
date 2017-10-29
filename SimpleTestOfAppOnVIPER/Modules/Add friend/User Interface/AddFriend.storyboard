@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Новый друг-->
+        <scene sceneID="ntA-oj-gO3">
+            <objects>
+                <viewController id="zHY-qF-9bB" customClass="AddFriendViewController" customModule="SimpleTestOfAppOnVIPER" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vO9-c9-eie">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rPe-od-jEi">
+                                <rect key="frame" x="37" y="128" width="300" height="237.5"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" secondItem="rPe-od-jEi" secondAttribute="width" multiplier="251:317" id="TzM-wI-7LB"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Имя" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ydV-ma-652">
+                                <rect key="frame" x="67" y="153.5" width="240" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="baV-TB-5wB">
+                                <rect key="frame" x="67.5" y="191.5" width="240" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Возраст" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vcl-ys-fq5">
+                                <rect key="frame" x="67" y="256" width="240" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7kc-kZ-01q">
+                                <rect key="frame" x="67" y="285" width="240" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" secondItem="7kc-kZ-01q" secondAttribute="width" multiplier="9:40" id="EzT-KP-YaL"/>
+                                </constraints>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dVi-vx-akg">
+                                <rect key="frame" x="37.5" y="373.5" width="300" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" secondItem="dVi-vx-akg" secondAttribute="width" multiplier="62:301" id="rbd-y6-WA7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Добавить">
+                                    <color key="titleColor" red="1" green="0.43795626240000002" blue="0.59356554189999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveButtonAction:" destination="zHY-qF-9bB" eventType="touchUpInside" id="v1V-Ru-G3D"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7kc-kZ-01q" firstAttribute="top" secondItem="Vcl-ys-fq5" secondAttribute="bottom" constant="8" id="5xM-W4-9IT"/>
+                            <constraint firstItem="ydV-ma-652" firstAttribute="centerX" secondItem="rPe-od-jEi" secondAttribute="centerX" id="AFQ-ET-e3H"/>
+                            <constraint firstItem="baV-TB-5wB" firstAttribute="width" secondItem="ydV-ma-652" secondAttribute="width" id="Bla-f2-2vJ"/>
+                            <constraint firstItem="7kc-kZ-01q" firstAttribute="width" secondItem="Vcl-ys-fq5" secondAttribute="width" id="DA9-Fi-x13"/>
+                            <constraint firstItem="baV-TB-5wB" firstAttribute="centerX" secondItem="ydV-ma-652" secondAttribute="centerX" id="KF4-Eu-NJX"/>
+                            <constraint firstItem="dVi-vx-akg" firstAttribute="centerX" secondItem="rPe-od-jEi" secondAttribute="centerX" id="OeL-RS-Jbg"/>
+                            <constraint firstItem="ydV-ma-652" firstAttribute="width" secondItem="rPe-od-jEi" secondAttribute="width" multiplier="0.8" id="P1X-TK-TiF"/>
+                            <constraint firstItem="ydV-ma-652" firstAttribute="top" secondItem="rPe-od-jEi" secondAttribute="top" multiplier="1.2" id="UBQ-jD-Jn6"/>
+                            <constraint firstItem="baV-TB-5wB" firstAttribute="height" secondItem="ydV-ma-652" secondAttribute="height" id="Yeq-4J-VaJ"/>
+                            <constraint firstItem="dVi-vx-akg" firstAttribute="top" secondItem="rPe-od-jEi" secondAttribute="bottom" constant="8" id="aLG-DJ-6Ud"/>
+                            <constraint firstItem="7kc-kZ-01q" firstAttribute="centerX" secondItem="Vcl-ys-fq5" secondAttribute="centerX" id="ad5-Uc-5av"/>
+                            <constraint firstItem="rPe-od-jEi" firstAttribute="centerX" secondItem="OLy-VK-9kk" secondAttribute="centerX" id="fDL-5A-ESN"/>
+                            <constraint firstItem="Vcl-ys-fq5" firstAttribute="centerX" secondItem="rPe-od-jEi" secondAttribute="centerX" id="hK2-cB-Af4"/>
+                            <constraint firstItem="Vcl-ys-fq5" firstAttribute="width" secondItem="rPe-od-jEi" secondAttribute="width" multiplier="0.8" id="kPy-kt-5vh"/>
+                            <constraint firstItem="Vcl-ys-fq5" firstAttribute="top" secondItem="rPe-od-jEi" secondAttribute="top" multiplier="2" id="mDZ-MP-kZi"/>
+                            <constraint firstItem="baV-TB-5wB" firstAttribute="top" secondItem="ydV-ma-652" secondAttribute="bottom" constant="8" id="qfj-i3-5Uj"/>
+                            <constraint firstItem="rPe-od-jEi" firstAttribute="width" secondItem="vO9-c9-eie" secondAttribute="width" multiplier="0.8" id="vva-KG-e3H"/>
+                            <constraint firstItem="dVi-vx-akg" firstAttribute="width" secondItem="rPe-od-jEi" secondAttribute="width" id="w7a-8q-y8p"/>
+                            <constraint firstItem="rPe-od-jEi" firstAttribute="top" secondItem="OLy-VK-9kk" secondAttribute="top" multiplier="2" id="zkg-eG-dXQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="OLy-VK-9kk"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Новый друг" id="Wy9-GW-qq5">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="2nN-VJ-F1R">
+                            <connections>
+                                <action selector="cancelButtonAction:" destination="zHY-qF-9bB" id="zlX-9M-QcG"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="agePickerView" destination="7kc-kZ-01q" id="D32-LC-A47"/>
+                        <outlet property="nameTextField" destination="baV-TB-5wB" id="ulB-CU-n1T"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3q3-s8-jMj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="448.80000000000001" y="102.99850074962519"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="XkF-Ge-jmm">
+            <objects>
+                <navigationController storyboardIdentifier="AddFriendNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="Z9f-yk-L8M" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Cr7-Hm-qXc">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="zHY-qF-9bB" kind="relationship" relationship="rootViewController" id="E0c-2s-XzL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="puM-7Z-GQF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-279" y="103"/>
+        </scene>
+    </scenes>
+</document>

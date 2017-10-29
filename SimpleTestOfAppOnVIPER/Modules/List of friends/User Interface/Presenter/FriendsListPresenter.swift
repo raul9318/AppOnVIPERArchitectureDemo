@@ -29,6 +29,7 @@ extension FriendsListPresenter: FriendsListModuleInterface {
     }
 }
 
+// MARK: - FriendsListInteractorOutput
 extension FriendsListPresenter: FriendsListInteractorOutput {
     func receivedDataOfFrieds(_ friends: [Friend]) {
         guard friends.count > 0 else {
