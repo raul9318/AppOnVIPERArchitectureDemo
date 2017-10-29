@@ -12,6 +12,11 @@
 		6179CB9C1FA5DDCC00B9FFC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6179CB9A1FA5DDCC00B9FFC8 /* LaunchScreen.storyboard */; };
 		6179CBA71FA5DDCC00B9FFC8 /* SimpleTestOfAppOnVIPERTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6179CBA61FA5DDCC00B9FFC8 /* SimpleTestOfAppOnVIPERTests.swift */; };
 		6179CBB21FA5DDCC00B9FFC8 /* SimpleTestOfAppOnVIPERUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6179CBB11FA5DDCC00B9FFC8 /* SimpleTestOfAppOnVIPERUITests.swift */; };
+		6179CBC81FA5E2A200B9FFC8 /* FriendsListViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6179CBC71FA5E2A200B9FFC8 /* FriendsListViewInterface.swift */; };
+		6179CBCD1FA5E45300B9FFC8 /* FriendsListUpcomingDisplayData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6179CBCC1FA5E45300B9FFC8 /* FriendsListUpcomingDisplayData.swift */; };
+		6179CBCF1FA5E4A100B9FFC8 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6179CBCE1FA5E4A100B9FFC8 /* Friend.swift */; };
+		6179CBD11FA5E5C400B9FFC8 /* ListOfFriendsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6179CBD01FA5E5C400B9FFC8 /* ListOfFriendsStoryboard.storyboard */; };
+		6179CBD31FA5E6C800B9FFC8 /* FriendsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6179CBD21FA5E6C800B9FFC8 /* FriendsListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +48,11 @@
 		6179CBAD1FA5DDCC00B9FFC8 /* SimpleTestOfAppOnVIPERUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleTestOfAppOnVIPERUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6179CBB11FA5DDCC00B9FFC8 /* SimpleTestOfAppOnVIPERUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTestOfAppOnVIPERUITests.swift; sourceTree = "<group>"; };
 		6179CBB31FA5DDCC00B9FFC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6179CBC71FA5E2A200B9FFC8 /* FriendsListViewInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsListViewInterface.swift; sourceTree = "<group>"; };
+		6179CBCC1FA5E45300B9FFC8 /* FriendsListUpcomingDisplayData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsListUpcomingDisplayData.swift; sourceTree = "<group>"; };
+		6179CBCE1FA5E4A100B9FFC8 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		6179CBD01FA5E5C400B9FFC8 /* ListOfFriendsStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ListOfFriendsStoryboard.storyboard; sourceTree = "<group>"; };
+		6179CBD21FA5E6C800B9FFC8 /* FriendsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +104,8 @@
 			isa = PBXGroup;
 			children = (
 				6179CB911FA5DDCC00B9FFC8 /* AppDelegate.swift */,
+				6179CBC91FA5E2E200B9FFC8 /* Common */,
+				6179CBC11FA5E1CF00B9FFC8 /* Modules */,
 				6179CBC01FA5E07B00B9FFC8 /* Supporting Files */,
 			);
 			path = SimpleTestOfAppOnVIPER;
@@ -125,6 +137,81 @@
 				6179CB9D1FA5DDCC00B9FFC8 /* Info.plist */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6179CBC11FA5E1CF00B9FFC8 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				6179CBC21FA5E1E200B9FFC8 /* List of friends */,
+				6179CBC31FA5E1FD00B9FFC8 /* Add friend */,
+				6179CBC41FA5E20900B9FFC8 /* Detail of friend */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		6179CBC21FA5E1E200B9FFC8 /* List of friends */ = {
+			isa = PBXGroup;
+			children = (
+				6179CBC51FA5E23000B9FFC8 /* User Interface */,
+			);
+			path = "List of friends";
+			sourceTree = "<group>";
+		};
+		6179CBC31FA5E1FD00B9FFC8 /* Add friend */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Add friend";
+			sourceTree = "<group>";
+		};
+		6179CBC41FA5E20900B9FFC8 /* Detail of friend */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Detail of friend";
+			sourceTree = "<group>";
+		};
+		6179CBC51FA5E23000B9FFC8 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				6179CBCB1FA5E42B00B9FFC8 /* Presenter */,
+				6179CBC61FA5E23F00B9FFC8 /* View */,
+				6179CBD01FA5E5C400B9FFC8 /* ListOfFriendsStoryboard.storyboard */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		6179CBC61FA5E23F00B9FFC8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6179CBC71FA5E2A200B9FFC8 /* FriendsListViewInterface.swift */,
+				6179CBD21FA5E6C800B9FFC8 /* FriendsListViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6179CBC91FA5E2E200B9FFC8 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				6179CBCA1FA5E2EC00B9FFC8 /* Entity */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		6179CBCA1FA5E2EC00B9FFC8 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				6179CBCE1FA5E4A100B9FFC8 /* Friend.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		6179CBCB1FA5E42B00B9FFC8 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				6179CBCC1FA5E45300B9FFC8 /* FriendsListUpcomingDisplayData.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +321,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6179CBD11FA5E5C400B9FFC8 /* ListOfFriendsStoryboard.storyboard in Resources */,
 				6179CB9C1FA5DDCC00B9FFC8 /* LaunchScreen.storyboard in Resources */,
 				6179CB991FA5DDCC00B9FFC8 /* Assets.xcassets in Resources */,
 			);
@@ -260,7 +348,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6179CBC81FA5E2A200B9FFC8 /* FriendsListViewInterface.swift in Sources */,
 				6179CB921FA5DDCC00B9FFC8 /* AppDelegate.swift in Sources */,
+				6179CBD31FA5E6C800B9FFC8 /* FriendsListViewController.swift in Sources */,
+				6179CBCD1FA5E45300B9FFC8 /* FriendsListUpcomingDisplayData.swift in Sources */,
+				6179CBCF1FA5E4A100B9FFC8 /* Friend.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
