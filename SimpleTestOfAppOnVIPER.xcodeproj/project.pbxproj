@@ -7,13 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		617568771FA60CC700D5D445 /* AddFriend.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 617568761FA60CC700D5D445 /* AddFriend.storyboard */; };
+		617568791FA610B400D5D445 /* AddFriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617568781FA610B400D5D445 /* AddFriendViewController.swift */; };
+		6175687C1FA6124D00D5D445 /* AddFriendModuleInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6175687B1FA6124D00D5D445 /* AddFriendModuleInterface.swift */; };
+		6175687E1FA613D900D5D445 /* AddFriendPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6175687D1FA613D900D5D445 /* AddFriendPresenter.swift */; };
+		617568801FA6145700D5D445 /* AddFriendInteractorIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6175687F1FA6145700D5D445 /* AddFriendInteractorIO.swift */; };
+		617568831FA6152D00D5D445 /* AddFriendWireframeInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617568821FA6152D00D5D445 /* AddFriendWireframeInput.swift */; };
+		617568851FA6159F00D5D445 /* AddFriendInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617568841FA6159F00D5D445 /* AddFriendInteractor.swift */; };
+		617568871FA617E200D5D445 /* AddFriendRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617568861FA617E200D5D445 /* AddFriendRouter.swift */; };
 		6179CB921FA5DDCC00B9FFC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6179CB911FA5DDCC00B9FFC8 /* AppDelegate.swift */; };
-		6179CB941FA5DDCC00B9FFC8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6179CB931FA5DDCC00B9FFC8 /* ViewController.swift */; };
-		6179CB971FA5DDCC00B9FFC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6179CB951FA5DDCC00B9FFC8 /* Main.storyboard */; };
 		6179CB991FA5DDCC00B9FFC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6179CB981FA5DDCC00B9FFC8 /* Assets.xcassets */; };
 		6179CB9C1FA5DDCC00B9FFC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6179CB9A1FA5DDCC00B9FFC8 /* LaunchScreen.storyboard */; };
 		6179CBA71FA5DDCC00B9FFC8 /* SimpleTestOfAppOnVIPERTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6179CBA61FA5DDCC00B9FFC8 /* SimpleTestOfAppOnVIPERTests.swift */; };
 		6179CBB21FA5DDCC00B9FFC8 /* SimpleTestOfAppOnVIPERUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6179CBB11FA5DDCC00B9FFC8 /* SimpleTestOfAppOnVIPERUITests.swift */; };
+		6179CBC81FA5E2A200B9FFC8 /* FriendsListViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6179CBC71FA5E2A200B9FFC8 /* FriendsListViewInterface.swift */; };
+		6179CBCD1FA5E45300B9FFC8 /* FriendsListUpcomingDisplayData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6179CBCC1FA5E45300B9FFC8 /* FriendsListUpcomingDisplayData.swift */; };
+		6179CBCF1FA5E4A100B9FFC8 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6179CBCE1FA5E4A100B9FFC8 /* Friend.swift */; };
+		6179CBD11FA5E5C400B9FFC8 /* ListOfFriendsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6179CBD01FA5E5C400B9FFC8 /* ListOfFriendsStoryboard.storyboard */; };
+		6179CBD31FA5E6C800B9FFC8 /* FriendsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6179CBD21FA5E6C800B9FFC8 /* FriendsListViewController.swift */; };
+		6189B1751FA5EAED00694FBF /* FriendsListModuleInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6189B1741FA5EAED00694FBF /* FriendsListModuleInterface.swift */; };
+		6189B1771FA5EBE500694FBF /* FriendsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6189B1761FA5EBE500694FBF /* FriendsListPresenter.swift */; };
+		6189B17A1FA5ECFA00694FBF /* FriendsListInteractorIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6189B1791FA5ECFA00694FBF /* FriendsListInteractorIO.swift */; };
+		6189B17C1FA5EDBB00694FBF /* FriendsListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6189B17B1FA5EDBB00694FBF /* FriendsListInteractor.swift */; };
+		6189B17F1FA5EFD400694FBF /* FriendsListWireframeInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6189B17E1FA5EFD300694FBF /* FriendsListWireframeInput.swift */; };
+		6189B1811FA5F06C00694FBF /* FriendsListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6189B1801FA5F06C00694FBF /* FriendsListRouter.swift */; };
+		6189B1831FA5F8DD00694FBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6189B1821FA5F8DD00694FBF /* Main.storyboard */; };
+		6189B1861FA6069B00694FBF /* FriendsDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6189B1851FA6069B00694FBF /* FriendsDataManager.swift */; };
+		6189B18D1FA60B2400694FBF /* AddFriendViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6189B18C1FA60B2400694FBF /* AddFriendViewInterface.swift */; };
+		61CB4A781FA6250A005DD3B0 /* FriendDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61CB4A771FA6250A005DD3B0 /* FriendDetailsPresenter.swift */; };
+		61CB4A7A1FA62692005DD3B0 /* FriendDetailsInteractorIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61CB4A791FA62692005DD3B0 /* FriendDetailsInteractorIO.swift */; };
+		61CB4A7C1FA628A9005DD3B0 /* FriendDetailsWireframeInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61CB4A7B1FA628A9005DD3B0 /* FriendDetailsWireframeInput.swift */; };
+		61CB4A7E1FA62913005DD3B0 /* FriendDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61CB4A7D1FA62913005DD3B0 /* FriendDetailsInteractor.swift */; };
+		61CB4A801FA629ED005DD3B0 /* FriendDetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61CB4A7F1FA629ED005DD3B0 /* FriendDetailsRouter.swift */; };
+		61E0BB011FA61E6C00378AF6 /* FriendDetailsViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E0BB001FA61E6C00378AF6 /* FriendDetailsViewInterface.swift */; };
+		61E0BB031FA61EE900378AF6 /* FriendDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61E0BB021FA61EE900378AF6 /* FriendDetails.storyboard */; };
+		61E0BB051FA6210F00378AF6 /* FriendDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E0BB041FA6210F00378AF6 /* FriendDetailsViewController.swift */; };
+		61E0BB071FA6219300378AF6 /* FriendDetailsModuleInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E0BB061FA6219200378AF6 /* FriendDetailsModuleInterface.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,10 +63,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		617568761FA60CC700D5D445 /* AddFriend.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddFriend.storyboard; sourceTree = "<group>"; };
+		617568781FA610B400D5D445 /* AddFriendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriendViewController.swift; sourceTree = "<group>"; };
+		6175687B1FA6124D00D5D445 /* AddFriendModuleInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriendModuleInterface.swift; sourceTree = "<group>"; };
+		6175687D1FA613D900D5D445 /* AddFriendPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriendPresenter.swift; sourceTree = "<group>"; };
+		6175687F1FA6145700D5D445 /* AddFriendInteractorIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriendInteractorIO.swift; sourceTree = "<group>"; };
+		617568821FA6152D00D5D445 /* AddFriendWireframeInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriendWireframeInput.swift; sourceTree = "<group>"; };
+		617568841FA6159F00D5D445 /* AddFriendInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriendInteractor.swift; sourceTree = "<group>"; };
+		617568861FA617E200D5D445 /* AddFriendRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriendRouter.swift; sourceTree = "<group>"; };
 		6179CB8E1FA5DDCC00B9FFC8 /* SimpleTestOfAppOnVIPER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleTestOfAppOnVIPER.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6179CB911FA5DDCC00B9FFC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6179CB931FA5DDCC00B9FFC8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6179CB961FA5DDCC00B9FFC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6179CB981FA5DDCC00B9FFC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6179CB9B1FA5DDCC00B9FFC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6179CB9D1FA5DDCC00B9FFC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +82,29 @@
 		6179CBAD1FA5DDCC00B9FFC8 /* SimpleTestOfAppOnVIPERUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleTestOfAppOnVIPERUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6179CBB11FA5DDCC00B9FFC8 /* SimpleTestOfAppOnVIPERUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTestOfAppOnVIPERUITests.swift; sourceTree = "<group>"; };
 		6179CBB31FA5DDCC00B9FFC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6179CBC71FA5E2A200B9FFC8 /* FriendsListViewInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsListViewInterface.swift; sourceTree = "<group>"; };
+		6179CBCC1FA5E45300B9FFC8 /* FriendsListUpcomingDisplayData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsListUpcomingDisplayData.swift; sourceTree = "<group>"; };
+		6179CBCE1FA5E4A100B9FFC8 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		6179CBD01FA5E5C400B9FFC8 /* ListOfFriendsStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ListOfFriendsStoryboard.storyboard; sourceTree = "<group>"; };
+		6179CBD21FA5E6C800B9FFC8 /* FriendsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsListViewController.swift; sourceTree = "<group>"; };
+		6189B1741FA5EAED00694FBF /* FriendsListModuleInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsListModuleInterface.swift; sourceTree = "<group>"; };
+		6189B1761FA5EBE500694FBF /* FriendsListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsListPresenter.swift; sourceTree = "<group>"; };
+		6189B1791FA5ECFA00694FBF /* FriendsListInteractorIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsListInteractorIO.swift; sourceTree = "<group>"; };
+		6189B17B1FA5EDBB00694FBF /* FriendsListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsListInteractor.swift; sourceTree = "<group>"; };
+		6189B17E1FA5EFD300694FBF /* FriendsListWireframeInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsListWireframeInput.swift; sourceTree = "<group>"; };
+		6189B1801FA5F06C00694FBF /* FriendsListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsListRouter.swift; sourceTree = "<group>"; };
+		6189B1821FA5F8DD00694FBF /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		6189B1851FA6069B00694FBF /* FriendsDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsDataManager.swift; sourceTree = "<group>"; };
+		6189B18C1FA60B2400694FBF /* AddFriendViewInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriendViewInterface.swift; sourceTree = "<group>"; };
+		61CB4A771FA6250A005DD3B0 /* FriendDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDetailsPresenter.swift; sourceTree = "<group>"; };
+		61CB4A791FA62692005DD3B0 /* FriendDetailsInteractorIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDetailsInteractorIO.swift; sourceTree = "<group>"; };
+		61CB4A7B1FA628A9005DD3B0 /* FriendDetailsWireframeInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDetailsWireframeInput.swift; sourceTree = "<group>"; };
+		61CB4A7D1FA62913005DD3B0 /* FriendDetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDetailsInteractor.swift; sourceTree = "<group>"; };
+		61CB4A7F1FA629ED005DD3B0 /* FriendDetailsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDetailsRouter.swift; sourceTree = "<group>"; };
+		61E0BB001FA61E6C00378AF6 /* FriendDetailsViewInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDetailsViewInterface.swift; sourceTree = "<group>"; };
+		61E0BB021FA61EE900378AF6 /* FriendDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FriendDetails.storyboard; sourceTree = "<group>"; };
+		61E0BB041FA6210F00378AF6 /* FriendDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDetailsViewController.swift; sourceTree = "<group>"; };
+		61E0BB061FA6219200378AF6 /* FriendDetailsModuleInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDetailsModuleInterface.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +132,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6175687A1FA611FB00D5D445 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				6175687D1FA613D900D5D445 /* AddFriendPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		617568811FA6150E00D5D445 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				617568821FA6152D00D5D445 /* AddFriendWireframeInput.swift */,
+				617568861FA617E200D5D445 /* AddFriendRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 		6179CB851FA5DDCC00B9FFC8 = {
 			isa = PBXGroup;
 			children = (
@@ -98,11 +173,9 @@
 			isa = PBXGroup;
 			children = (
 				6179CB911FA5DDCC00B9FFC8 /* AppDelegate.swift */,
-				6179CB931FA5DDCC00B9FFC8 /* ViewController.swift */,
-				6179CB951FA5DDCC00B9FFC8 /* Main.storyboard */,
-				6179CB981FA5DDCC00B9FFC8 /* Assets.xcassets */,
-				6179CB9A1FA5DDCC00B9FFC8 /* LaunchScreen.storyboard */,
-				6179CB9D1FA5DDCC00B9FFC8 /* Info.plist */,
+				6179CBC91FA5E2E200B9FFC8 /* Common */,
+				6179CBC11FA5E1CF00B9FFC8 /* Modules */,
+				6179CBC01FA5E07B00B9FFC8 /* Supporting Files */,
 			);
 			path = SimpleTestOfAppOnVIPER;
 			sourceTree = "<group>";
@@ -123,6 +196,228 @@
 				6179CBB31FA5DDCC00B9FFC8 /* Info.plist */,
 			);
 			path = SimpleTestOfAppOnVIPERUITests;
+			sourceTree = "<group>";
+		};
+		6179CBC01FA5E07B00B9FFC8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6179CB981FA5DDCC00B9FFC8 /* Assets.xcassets */,
+				6189B1821FA5F8DD00694FBF /* Main.storyboard */,
+				6179CB9A1FA5DDCC00B9FFC8 /* LaunchScreen.storyboard */,
+				6179CB9D1FA5DDCC00B9FFC8 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6179CBC11FA5E1CF00B9FFC8 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				6179CBC21FA5E1E200B9FFC8 /* List of friends */,
+				6179CBC31FA5E1FD00B9FFC8 /* Add friend */,
+				6179CBC41FA5E20900B9FFC8 /* Details of friend */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		6179CBC21FA5E1E200B9FFC8 /* List of friends */ = {
+			isa = PBXGroup;
+			children = (
+				6189B1781FA5ECCF00694FBF /* Module Logic */,
+				6189B1731FA5EAD100694FBF /* Module Interface */,
+				6179CBC51FA5E23000B9FFC8 /* User Interface */,
+			);
+			path = "List of friends";
+			sourceTree = "<group>";
+		};
+		6179CBC31FA5E1FD00B9FFC8 /* Add friend */ = {
+			isa = PBXGroup;
+			children = (
+				6189B1871FA608B900694FBF /* Module Logic */,
+				6189B18A1FA6091600694FBF /* Module Interface */,
+				6189B1881FA6090000694FBF /* User Interface */,
+			);
+			path = "Add friend";
+			sourceTree = "<group>";
+		};
+		6179CBC41FA5E20900B9FFC8 /* Details of friend */ = {
+			isa = PBXGroup;
+			children = (
+				61E0BAF81FA61DC400378AF6 /* Module Logic */,
+				61E0BAF91FA61DD200378AF6 /* Module Interface */,
+				61E0BAFA1FA61DE200378AF6 /* User Interface */,
+			);
+			path = "Details of friend";
+			sourceTree = "<group>";
+		};
+		6179CBC51FA5E23000B9FFC8 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				6179CBCB1FA5E42B00B9FFC8 /* Presenter */,
+				6179CBC61FA5E23F00B9FFC8 /* View */,
+				6189B17D1FA5EFAF00694FBF /* Router */,
+				6179CBD01FA5E5C400B9FFC8 /* ListOfFriendsStoryboard.storyboard */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		6179CBC61FA5E23F00B9FFC8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6179CBC71FA5E2A200B9FFC8 /* FriendsListViewInterface.swift */,
+				6179CBD21FA5E6C800B9FFC8 /* FriendsListViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6179CBC91FA5E2E200B9FFC8 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				6189B1841FA6067A00694FBF /* Data Stack */,
+				6179CBCA1FA5E2EC00B9FFC8 /* Entity */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		6179CBCA1FA5E2EC00B9FFC8 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				6179CBCE1FA5E4A100B9FFC8 /* Friend.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		6179CBCB1FA5E42B00B9FFC8 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				6189B1761FA5EBE500694FBF /* FriendsListPresenter.swift */,
+				6179CBCC1FA5E45300B9FFC8 /* FriendsListUpcomingDisplayData.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		6189B1731FA5EAD100694FBF /* Module Interface */ = {
+			isa = PBXGroup;
+			children = (
+				6189B1741FA5EAED00694FBF /* FriendsListModuleInterface.swift */,
+			);
+			path = "Module Interface";
+			sourceTree = "<group>";
+		};
+		6189B1781FA5ECCF00694FBF /* Module Logic */ = {
+			isa = PBXGroup;
+			children = (
+				6189B1791FA5ECFA00694FBF /* FriendsListInteractorIO.swift */,
+				6189B17B1FA5EDBB00694FBF /* FriendsListInteractor.swift */,
+			);
+			path = "Module Logic";
+			sourceTree = "<group>";
+		};
+		6189B17D1FA5EFAF00694FBF /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				6189B17E1FA5EFD300694FBF /* FriendsListWireframeInput.swift */,
+				6189B1801FA5F06C00694FBF /* FriendsListRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		6189B1841FA6067A00694FBF /* Data Stack */ = {
+			isa = PBXGroup;
+			children = (
+				6189B1851FA6069B00694FBF /* FriendsDataManager.swift */,
+			);
+			path = "Data Stack";
+			sourceTree = "<group>";
+		};
+		6189B1871FA608B900694FBF /* Module Logic */ = {
+			isa = PBXGroup;
+			children = (
+				6175687F1FA6145700D5D445 /* AddFriendInteractorIO.swift */,
+				617568841FA6159F00D5D445 /* AddFriendInteractor.swift */,
+			);
+			path = "Module Logic";
+			sourceTree = "<group>";
+		};
+		6189B1881FA6090000694FBF /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				6175687A1FA611FB00D5D445 /* Presenter */,
+				6189B18B1FA60AFB00694FBF /* View */,
+				617568811FA6150E00D5D445 /* Router */,
+				617568761FA60CC700D5D445 /* AddFriend.storyboard */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		6189B18A1FA6091600694FBF /* Module Interface */ = {
+			isa = PBXGroup;
+			children = (
+				6175687B1FA6124D00D5D445 /* AddFriendModuleInterface.swift */,
+			);
+			path = "Module Interface";
+			sourceTree = "<group>";
+		};
+		6189B18B1FA60AFB00694FBF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6189B18C1FA60B2400694FBF /* AddFriendViewInterface.swift */,
+				617568781FA610B400D5D445 /* AddFriendViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		61E0BAF81FA61DC400378AF6 /* Module Logic */ = {
+			isa = PBXGroup;
+			children = (
+				61CB4A791FA62692005DD3B0 /* FriendDetailsInteractorIO.swift */,
+				61CB4A7D1FA62913005DD3B0 /* FriendDetailsInteractor.swift */,
+			);
+			path = "Module Logic";
+			sourceTree = "<group>";
+		};
+		61E0BAF91FA61DD200378AF6 /* Module Interface */ = {
+			isa = PBXGroup;
+			children = (
+				61E0BB061FA6219200378AF6 /* FriendDetailsModuleInterface.swift */,
+			);
+			path = "Module Interface";
+			sourceTree = "<group>";
+		};
+		61E0BAFA1FA61DE200378AF6 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				61E0BAFF1FA61E4800378AF6 /* Presenter */,
+				61E0BAFB1FA61E0000378AF6 /* View */,
+				61E0BAFE1FA61E2E00378AF6 /* Router */,
+				61E0BB021FA61EE900378AF6 /* FriendDetails.storyboard */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		61E0BAFB1FA61E0000378AF6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				61E0BB001FA61E6C00378AF6 /* FriendDetailsViewInterface.swift */,
+				61E0BB041FA6210F00378AF6 /* FriendDetailsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		61E0BAFE1FA61E2E00378AF6 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				61CB4A7B1FA628A9005DD3B0 /* FriendDetailsWireframeInput.swift */,
+				61CB4A7F1FA629ED005DD3B0 /* FriendDetailsRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		61E0BAFF1FA61E4800378AF6 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				61CB4A771FA6250A005DD3B0 /* FriendDetailsPresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,9 +527,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6179CBD11FA5E5C400B9FFC8 /* ListOfFriendsStoryboard.storyboard in Resources */,
 				6179CB9C1FA5DDCC00B9FFC8 /* LaunchScreen.storyboard in Resources */,
+				617568771FA60CC700D5D445 /* AddFriend.storyboard in Resources */,
 				6179CB991FA5DDCC00B9FFC8 /* Assets.xcassets in Resources */,
-				6179CB971FA5DDCC00B9FFC8 /* Main.storyboard in Resources */,
+				6189B1831FA5F8DD00694FBF /* Main.storyboard in Resources */,
+				61E0BB031FA61EE900378AF6 /* FriendDetails.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +557,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6179CB941FA5DDCC00B9FFC8 /* ViewController.swift in Sources */,
+				6189B1751FA5EAED00694FBF /* FriendsListModuleInterface.swift in Sources */,
+				6179CBC81FA5E2A200B9FFC8 /* FriendsListViewInterface.swift in Sources */,
+				61E0BB071FA6219300378AF6 /* FriendDetailsModuleInterface.swift in Sources */,
+				61CB4A801FA629ED005DD3B0 /* FriendDetailsRouter.swift in Sources */,
+				6189B18D1FA60B2400694FBF /* AddFriendViewInterface.swift in Sources */,
+				61E0BB011FA61E6C00378AF6 /* FriendDetailsViewInterface.swift in Sources */,
+				6189B17C1FA5EDBB00694FBF /* FriendsListInteractor.swift in Sources */,
+				617568851FA6159F00D5D445 /* AddFriendInteractor.swift in Sources */,
+				6189B17F1FA5EFD400694FBF /* FriendsListWireframeInput.swift in Sources */,
+				61CB4A7C1FA628A9005DD3B0 /* FriendDetailsWireframeInput.swift in Sources */,
+				6189B17A1FA5ECFA00694FBF /* FriendsListInteractorIO.swift in Sources */,
+				61CB4A7A1FA62692005DD3B0 /* FriendDetailsInteractorIO.swift in Sources */,
 				6179CB921FA5DDCC00B9FFC8 /* AppDelegate.swift in Sources */,
+				6179CBD31FA5E6C800B9FFC8 /* FriendsListViewController.swift in Sources */,
+				617568791FA610B400D5D445 /* AddFriendViewController.swift in Sources */,
+				617568871FA617E200D5D445 /* AddFriendRouter.swift in Sources */,
+				61CB4A781FA6250A005DD3B0 /* FriendDetailsPresenter.swift in Sources */,
+				617568831FA6152D00D5D445 /* AddFriendWireframeInput.swift in Sources */,
+				6175687C1FA6124D00D5D445 /* AddFriendModuleInterface.swift in Sources */,
+				617568801FA6145700D5D445 /* AddFriendInteractorIO.swift in Sources */,
+				6189B1861FA6069B00694FBF /* FriendsDataManager.swift in Sources */,
+				61CB4A7E1FA62913005DD3B0 /* FriendDetailsInteractor.swift in Sources */,
+				6189B1811FA5F06C00694FBF /* FriendsListRouter.swift in Sources */,
+				61E0BB051FA6210F00378AF6 /* FriendDetailsViewController.swift in Sources */,
+				6175687E1FA613D900D5D445 /* AddFriendPresenter.swift in Sources */,
+				6179CBCD1FA5E45300B9FFC8 /* FriendsListUpcomingDisplayData.swift in Sources */,
+				6189B1771FA5EBE500694FBF /* FriendsListPresenter.swift in Sources */,
+				6179CBCF1FA5E4A100B9FFC8 /* Friend.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +620,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		6179CB951FA5DDCC00B9FFC8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6179CB961FA5DDCC00B9FFC8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		6179CB9A1FA5DDCC00B9FFC8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -427,7 +743,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SimpleTestOfAppOnVIPER/Info.plist;
+				INFOPLIST_FILE = "SimpleTestOfAppOnVIPER/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = example.SimpleTestOfAppOnVIPER;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -441,7 +758,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SimpleTestOfAppOnVIPER/Info.plist;
+				INFOPLIST_FILE = "SimpleTestOfAppOnVIPER/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = example.SimpleTestOfAppOnVIPER;
 				PRODUCT_NAME = "$(TARGET_NAME)";
