@@ -45,6 +45,10 @@ extension FriendsListRouter: FriendsListWireFrameInput {
     }
     
     func showFriendDetailInterfaceFor(_ friend: Friend) {
+        guard let friendDetailModule = FriendDetailsRouter.createModule(with: friend) else {
+            return
+        }
         
+        controller?.navigationController?.pushViewController(friendDetailModule, animated: true)
     }
 }

@@ -1,5 +1,5 @@
 //
-//  FriendDetailsViewInterface.swift
+//  FriendDetailsModuleInterface.swift
 //  SimpleTestOfAppOnVIPER
 //
 //  Created by Рамиль Ибрагимов on 29.10.2017.
@@ -8,6 +8,7 @@
 
 import Foundation
 
-protocol FriendDetailsViewInterface: class {
-    func displayData(name: String, ageString: String)
+protocol FriendDetailsModuleInterface: class {
+    func updateDisplayData()
+    func deleteFriend()
 }

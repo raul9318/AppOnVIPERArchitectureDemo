@@ -25,10 +25,12 @@ extension FriendsDataManager {
         _data.append(friend)
     }
     
-    func removeFriendAt(index: Int) {
-        if _data.indices.contains(index) {
-            _data.remove(at: index)
+    func remove(friend: Friend) {
+        guard let index = _data.index(of: friend) else {
+            return
         }
+        
+        _data.remove(at: index)
     }
 }
 

@@ -9,11 +9,27 @@
 import UIKit
 
 class FriendDetailsViewController: UIViewController {
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var ageLabel: UILabel!
+    
+    @IBAction func deleteButtonAction(_ sender: Any) {
+        presenter?.deleteFriend()
+    }
+    
+    var presenter: FriendDetailsModuleInterface?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        presenter?.updateDisplayData()
     }
 
+}
+
+// MARK: - FriendDetailsViewInterface
+extension FriendDetailsViewController: FriendDetailsViewInterface {
+    func displayData(name: String, ageString: String) {
+        nameLabel.text = name
+        ageLabel.text = ageString
+    }
 }

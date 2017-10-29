@@ -15,7 +15,7 @@
         <!--Данные друга-->
         <scene sceneID="F6E-Ic-cpQ">
             <objects>
-                <viewController id="ZHu-tf-SJW" customClass="AddFriendViewController" customModule="SimpleTestOfAppOnVIPER" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FriendDetailsViewController" id="ZHu-tf-SJW" customClass="FriendDetailsViewController" customModule="SimpleTestOfAppOnVIPER" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Au0-FN-7lp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -42,6 +42,9 @@
                                 <state key="normal" title="Удалить">
                                     <color key="titleColor" red="1" green="0.43795626240000002" blue="0.59356554189999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="deleteButtonAction:" destination="ZHu-tf-SJW" eventType="touchUpInside" id="hdl-TZ-YSh"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Имя друга" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c1S-lD-0uK">
                                 <rect key="frame" x="67" y="179" width="240" height="26.5"/>
@@ -85,9 +88,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="C1o-qT-rap"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Данные друга" id="9C1-QN-mVT">
-                        <barButtonItem key="leftBarButtonItem" title="Назад" id="Kx8-08-HD5"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Данные друга" id="9C1-QN-mVT"/>
+                    <connections>
+                        <outlet property="ageLabel" destination="EX0-lM-5xG" id="BtC-hN-8Hj"/>
+                        <outlet property="nameLabel" destination="c1S-lD-0uK" id="iWB-Av-riS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ITx-H7-GxV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
