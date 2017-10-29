@@ -169,6 +169,8 @@
 		6179CBC21FA5E1E200B9FFC8 /* List of friends */ = {
 			isa = PBXGroup;
 			children = (
+				6189B1781FA5ECCF00694FBF /* Module Logic */,
+				6189B1731FA5EAD100694FBF /* Module Interface */,
 				6179CBC51FA5E23000B9FFC8 /* User Interface */,
 			);
 			path = "List of friends";
@@ -177,6 +179,9 @@
 		6179CBC31FA5E1FD00B9FFC8 /* Add friend */ = {
 			isa = PBXGroup;
 			children = (
+				6189B1871FA608B900694FBF /* Module Logic */,
+				6189B18A1FA6091600694FBF /* Module Interface */,
+				6189B1881FA6090000694FBF /* User Interface */,
 			);
 			path = "Add friend";
 			sourceTree = "<group>";
@@ -191,8 +196,6 @@
 		6179CBC51FA5E23000B9FFC8 /* User Interface */ = {
 			isa = PBXGroup;
 			children = (
-				6189B1781FA5ECCF00694FBF /* Module Logic */,
-				6189B1731FA5EAD100694FBF /* Module Interface */,
 				6179CBCB1FA5E42B00B9FFC8 /* Presenter */,
 				6179CBC61FA5E23F00B9FFC8 /* View */,
 				6189B17D1FA5EFAF00694FBF /* Router */,
@@ -268,6 +271,27 @@
 				6189B1851FA6069B00694FBF /* FriendsDataManager.swift */,
 			);
 			path = "Data Stack";
+			sourceTree = "<group>";
+		};
+		6189B1871FA608B900694FBF /* Module Logic */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Module Logic";
+			sourceTree = "<group>";
+		};
+		6189B1881FA6090000694FBF /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		6189B18A1FA6091600694FBF /* Module Interface */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Module Interface";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
