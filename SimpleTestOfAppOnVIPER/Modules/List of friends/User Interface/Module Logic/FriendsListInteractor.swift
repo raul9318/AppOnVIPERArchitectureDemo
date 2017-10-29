@@ -15,8 +15,7 @@ class FriendsListInteractor: NSObject {
 // MARK: - FriendsListInteractorInput
 extension FriendsListInteractor: FriendsListInteractorInput {
     func fetchDataOfFriends() {
-        // TODO: request for data
-        let result: [Friend] = []
+        let result = FriendsDataManager.shared.allfriends
         output?.receivedDataOfFrieds(result)
     }
 }

@@ -8,4 +8,27 @@
 
 import Foundation
 
+class FriendsDataManager {
+    static let shared = FriendsDataManager()
+    private init() {}
+    
+    fileprivate var _data = [Friend]()
+}
+
+extension FriendsDataManager {
+    var allfriends: [Friend] {
+        return _data
+    }
+
+    func addFriendWith(name: String, age: Int) {
+        let friend = Friend(name: name, age: age)
+        _data.append(friend)
+    }
+    
+    func removeFriendAt(index: Int) {
+        if _data.indices.contains(index) {
+            _data.remove(at: index)
+        }
+    }
+}
 
