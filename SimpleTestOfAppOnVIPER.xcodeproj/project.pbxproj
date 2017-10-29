@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		6179CB921FA5DDCC00B9FFC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6179CB911FA5DDCC00B9FFC8 /* AppDelegate.swift */; };
-		6179CB941FA5DDCC00B9FFC8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6179CB931FA5DDCC00B9FFC8 /* ViewController.swift */; };
-		6179CB971FA5DDCC00B9FFC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6179CB951FA5DDCC00B9FFC8 /* Main.storyboard */; };
 		6179CB991FA5DDCC00B9FFC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6179CB981FA5DDCC00B9FFC8 /* Assets.xcassets */; };
 		6179CB9C1FA5DDCC00B9FFC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6179CB9A1FA5DDCC00B9FFC8 /* LaunchScreen.storyboard */; };
 		6179CBA71FA5DDCC00B9FFC8 /* SimpleTestOfAppOnVIPERTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6179CBA61FA5DDCC00B9FFC8 /* SimpleTestOfAppOnVIPERTests.swift */; };
@@ -36,8 +34,6 @@
 /* Begin PBXFileReference section */
 		6179CB8E1FA5DDCC00B9FFC8 /* SimpleTestOfAppOnVIPER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleTestOfAppOnVIPER.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6179CB911FA5DDCC00B9FFC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6179CB931FA5DDCC00B9FFC8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6179CB961FA5DDCC00B9FFC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6179CB981FA5DDCC00B9FFC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6179CB9B1FA5DDCC00B9FFC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6179CB9D1FA5DDCC00B9FFC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -98,11 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				6179CB911FA5DDCC00B9FFC8 /* AppDelegate.swift */,
-				6179CB931FA5DDCC00B9FFC8 /* ViewController.swift */,
-				6179CB951FA5DDCC00B9FFC8 /* Main.storyboard */,
-				6179CB981FA5DDCC00B9FFC8 /* Assets.xcassets */,
-				6179CB9A1FA5DDCC00B9FFC8 /* LaunchScreen.storyboard */,
-				6179CB9D1FA5DDCC00B9FFC8 /* Info.plist */,
+				6179CBC01FA5E07B00B9FFC8 /* Supporting Files */,
 			);
 			path = SimpleTestOfAppOnVIPER;
 			sourceTree = "<group>";
@@ -123,6 +115,16 @@
 				6179CBB31FA5DDCC00B9FFC8 /* Info.plist */,
 			);
 			path = SimpleTestOfAppOnVIPERUITests;
+			sourceTree = "<group>";
+		};
+		6179CBC01FA5E07B00B9FFC8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6179CB981FA5DDCC00B9FFC8 /* Assets.xcassets */,
+				6179CB9A1FA5DDCC00B9FFC8 /* LaunchScreen.storyboard */,
+				6179CB9D1FA5DDCC00B9FFC8 /* Info.plist */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,7 +236,6 @@
 			files = (
 				6179CB9C1FA5DDCC00B9FFC8 /* LaunchScreen.storyboard in Resources */,
 				6179CB991FA5DDCC00B9FFC8 /* Assets.xcassets in Resources */,
-				6179CB971FA5DDCC00B9FFC8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +260,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6179CB941FA5DDCC00B9FFC8 /* ViewController.swift in Sources */,
 				6179CB921FA5DDCC00B9FFC8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,14 +296,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		6179CB951FA5DDCC00B9FFC8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6179CB961FA5DDCC00B9FFC8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		6179CB9A1FA5DDCC00B9FFC8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -427,7 +419,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SimpleTestOfAppOnVIPER/Info.plist;
+				INFOPLIST_FILE = "SimpleTestOfAppOnVIPER/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = example.SimpleTestOfAppOnVIPER;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -441,7 +434,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SimpleTestOfAppOnVIPER/Info.plist;
+				INFOPLIST_FILE = "SimpleTestOfAppOnVIPER/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = example.SimpleTestOfAppOnVIPER;
 				PRODUCT_NAME = "$(TARGET_NAME)";

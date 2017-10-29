@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:SimpleTestOfAppOnVIPER.xcodeproj">
+      location = "self:/Users/ramilibragimov/XCodeApps/SimpleTestOfAppOnVIPER/SimpleTestOfAppOnVIPER.xcodeproj">
    </FileRef>
 </Workspace>
