@@ -1,5 +1,5 @@
 //
-//  FriendsListViewInterface.swift
+//  FriendsListModuleInterface.swift
 //  SimpleTestOfAppOnVIPER
 //
 //  Created by Рамиль Ибрагимов on 29.10.2017.
@@ -8,7 +8,8 @@
 
 import Foundation
 
-protocol FriendsListViewInterface: class {
-    func showUpcomingDisplayData(_ data: FriendsListUpcomingDisplayData)
-    func showNoDataScreen()
+protocol FriendsListModuleInterface {
+    func updateDisplayData()
+    func presentAddFriendScreen()
+    func showFriendDetailScreenFor(friend: Friend)
 }

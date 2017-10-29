@@ -17,6 +17,14 @@
 		6179CBCF1FA5E4A100B9FFC8 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6179CBCE1FA5E4A100B9FFC8 /* Friend.swift */; };
 		6179CBD11FA5E5C400B9FFC8 /* ListOfFriendsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6179CBD01FA5E5C400B9FFC8 /* ListOfFriendsStoryboard.storyboard */; };
 		6179CBD31FA5E6C800B9FFC8 /* FriendsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6179CBD21FA5E6C800B9FFC8 /* FriendsListViewController.swift */; };
+		6189B1751FA5EAED00694FBF /* FriendsListModuleInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6189B1741FA5EAED00694FBF /* FriendsListModuleInterface.swift */; };
+		6189B1771FA5EBE500694FBF /* FriendsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6189B1761FA5EBE500694FBF /* FriendsListPresenter.swift */; };
+		6189B17A1FA5ECFA00694FBF /* FriendsListInteractorIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6189B1791FA5ECFA00694FBF /* FriendsListInteractorIO.swift */; };
+		6189B17C1FA5EDBB00694FBF /* FriendsListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6189B17B1FA5EDBB00694FBF /* FriendsListInteractor.swift */; };
+		6189B17F1FA5EFD400694FBF /* FriendsListWireframeInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6189B17E1FA5EFD300694FBF /* FriendsListWireframeInput.swift */; };
+		6189B1811FA5F06C00694FBF /* FriendsListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6189B1801FA5F06C00694FBF /* FriendsListRouter.swift */; };
+		6189B1831FA5F8DD00694FBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6189B1821FA5F8DD00694FBF /* Main.storyboard */; };
+		6189B1861FA6069B00694FBF /* FriendsDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6189B1851FA6069B00694FBF /* FriendsDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +61,14 @@
 		6179CBCE1FA5E4A100B9FFC8 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		6179CBD01FA5E5C400B9FFC8 /* ListOfFriendsStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ListOfFriendsStoryboard.storyboard; sourceTree = "<group>"; };
 		6179CBD21FA5E6C800B9FFC8 /* FriendsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsListViewController.swift; sourceTree = "<group>"; };
+		6189B1741FA5EAED00694FBF /* FriendsListModuleInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsListModuleInterface.swift; sourceTree = "<group>"; };
+		6189B1761FA5EBE500694FBF /* FriendsListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsListPresenter.swift; sourceTree = "<group>"; };
+		6189B1791FA5ECFA00694FBF /* FriendsListInteractorIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsListInteractorIO.swift; sourceTree = "<group>"; };
+		6189B17B1FA5EDBB00694FBF /* FriendsListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsListInteractor.swift; sourceTree = "<group>"; };
+		6189B17E1FA5EFD300694FBF /* FriendsListWireframeInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsListWireframeInput.swift; sourceTree = "<group>"; };
+		6189B1801FA5F06C00694FBF /* FriendsListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsListRouter.swift; sourceTree = "<group>"; };
+		6189B1821FA5F8DD00694FBF /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		6189B1851FA6069B00694FBF /* FriendsDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				6179CB981FA5DDCC00B9FFC8 /* Assets.xcassets */,
+				6189B1821FA5F8DD00694FBF /* Main.storyboard */,
 				6179CB9A1FA5DDCC00B9FFC8 /* LaunchScreen.storyboard */,
 				6179CB9D1FA5DDCC00B9FFC8 /* Info.plist */,
 			);
@@ -174,8 +191,11 @@
 		6179CBC51FA5E23000B9FFC8 /* User Interface */ = {
 			isa = PBXGroup;
 			children = (
+				6189B1781FA5ECCF00694FBF /* Module Logic */,
+				6189B1731FA5EAD100694FBF /* Module Interface */,
 				6179CBCB1FA5E42B00B9FFC8 /* Presenter */,
 				6179CBC61FA5E23F00B9FFC8 /* View */,
+				6189B17D1FA5EFAF00694FBF /* Router */,
 				6179CBD01FA5E5C400B9FFC8 /* ListOfFriendsStoryboard.storyboard */,
 			);
 			path = "User Interface";
@@ -193,6 +213,7 @@
 		6179CBC91FA5E2E200B9FFC8 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				6189B1841FA6067A00694FBF /* Data Stack */,
 				6179CBCA1FA5E2EC00B9FFC8 /* Entity */,
 			);
 			path = Common;
@@ -209,9 +230,44 @@
 		6179CBCB1FA5E42B00B9FFC8 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				6189B1761FA5EBE500694FBF /* FriendsListPresenter.swift */,
 				6179CBCC1FA5E45300B9FFC8 /* FriendsListUpcomingDisplayData.swift */,
 			);
 			path = Presenter;
+			sourceTree = "<group>";
+		};
+		6189B1731FA5EAD100694FBF /* Module Interface */ = {
+			isa = PBXGroup;
+			children = (
+				6189B1741FA5EAED00694FBF /* FriendsListModuleInterface.swift */,
+			);
+			path = "Module Interface";
+			sourceTree = "<group>";
+		};
+		6189B1781FA5ECCF00694FBF /* Module Logic */ = {
+			isa = PBXGroup;
+			children = (
+				6189B1791FA5ECFA00694FBF /* FriendsListInteractorIO.swift */,
+				6189B17B1FA5EDBB00694FBF /* FriendsListInteractor.swift */,
+			);
+			path = "Module Logic";
+			sourceTree = "<group>";
+		};
+		6189B17D1FA5EFAF00694FBF /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				6189B17E1FA5EFD300694FBF /* FriendsListWireframeInput.swift */,
+				6189B1801FA5F06C00694FBF /* FriendsListRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		6189B1841FA6067A00694FBF /* Data Stack */ = {
+			isa = PBXGroup;
+			children = (
+				6189B1851FA6069B00694FBF /* FriendsDataManager.swift */,
+			);
+			path = "Data Stack";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,6 +380,7 @@
 				6179CBD11FA5E5C400B9FFC8 /* ListOfFriendsStoryboard.storyboard in Resources */,
 				6179CB9C1FA5DDCC00B9FFC8 /* LaunchScreen.storyboard in Resources */,
 				6179CB991FA5DDCC00B9FFC8 /* Assets.xcassets in Resources */,
+				6189B1831FA5F8DD00694FBF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,10 +405,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6189B1751FA5EAED00694FBF /* FriendsListModuleInterface.swift in Sources */,
 				6179CBC81FA5E2A200B9FFC8 /* FriendsListViewInterface.swift in Sources */,
+				6189B17C1FA5EDBB00694FBF /* FriendsListInteractor.swift in Sources */,
+				6189B17F1FA5EFD400694FBF /* FriendsListWireframeInput.swift in Sources */,
+				6189B17A1FA5ECFA00694FBF /* FriendsListInteractorIO.swift in Sources */,
 				6179CB921FA5DDCC00B9FFC8 /* AppDelegate.swift in Sources */,
 				6179CBD31FA5E6C800B9FFC8 /* FriendsListViewController.swift in Sources */,
+				6189B1861FA6069B00694FBF /* FriendsDataManager.swift in Sources */,
+				6189B1811FA5F06C00694FBF /* FriendsListRouter.swift in Sources */,
 				6179CBCD1FA5E45300B9FFC8 /* FriendsListUpcomingDisplayData.swift in Sources */,
+				6189B1771FA5EBE500694FBF /* FriendsListPresenter.swift in Sources */,
 				6179CBCF1FA5E4A100B9FFC8 /* Friend.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
