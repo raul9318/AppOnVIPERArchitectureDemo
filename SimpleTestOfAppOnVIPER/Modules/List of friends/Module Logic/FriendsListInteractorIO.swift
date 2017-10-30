@@ -12,6 +12,7 @@ protocol FriendsListInteractorOutput: class {
     func receivedDataOfFrieds(_ friends: [Friend])
 }
 
-protocol FriendsListInteractorInput {
+protocol FriendsListInteractorInput: class {
+    var output: FriendsListInteractorOutput? { get set }
     func fetchDataOfFriends()
 }

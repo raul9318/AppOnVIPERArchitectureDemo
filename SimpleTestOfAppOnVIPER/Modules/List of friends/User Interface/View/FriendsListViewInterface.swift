@@ -9,6 +9,7 @@
 import Foundation
 
 protocol FriendsListViewInterface: class {
+    var presenter: FriendsListModuleInterface? { get set }
     func showUpcomingDisplayData(_ data: FriendsListUpcomingDisplayData)
     func showNoDataScreen()
 }

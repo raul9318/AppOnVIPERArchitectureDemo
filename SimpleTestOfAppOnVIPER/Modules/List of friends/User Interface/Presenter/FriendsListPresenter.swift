@@ -10,14 +10,14 @@ import Foundation
 
 class FriendsListPresenter: NSObject {
     weak var view: FriendsListViewInterface?
-    var friendsListInteractor: FriendsListInteractorInput?
+    var interactor: FriendsListInteractorInput?
     var router: FriendsListWireFrameInput?
 }
 
 // MARK: - FriendsListModuleInterface
 extension FriendsListPresenter: FriendsListModuleInterface {
     func updateDisplayData() {
-        friendsListInteractor?.fetchDataOfFriends()
+        interactor?.fetchDataOfFriends()
     }
     
     func presentAddFriendScreen() {

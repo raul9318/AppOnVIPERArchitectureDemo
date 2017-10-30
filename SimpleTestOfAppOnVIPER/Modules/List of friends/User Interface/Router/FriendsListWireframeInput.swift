@@ -8,7 +8,8 @@
 
 import UIKit
 
-protocol FriendsListWireFrameInput {
+protocol FriendsListWireFrameInput: class {
+    var controller: FriendsListViewController? { get set }
     static func createModule() -> UIViewController?
     func presentAddInterface()
     func showFriendDetailInterfaceFor(_ friend: Friend)

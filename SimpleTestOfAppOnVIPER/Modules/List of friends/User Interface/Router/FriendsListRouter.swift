@@ -26,7 +26,7 @@ extension FriendsListRouter: FriendsListWireFrameInput {
         
         view.presenter = presenter
         
-        presenter.friendsListInteractor = interactor
+        presenter.interactor = interactor
         presenter.view = view
         presenter.router = router
         

@@ -8,7 +8,10 @@
 
 import Foundation
 
-protocol FriendsListModuleInterface {
+protocol FriendsListModuleInterface: class {
+    var view: FriendsListViewInterface? { get set }
+    var interactor: FriendsListInteractorInput? { get set }
+    var router: FriendsListWireFrameInput? { get set }
     func updateDisplayData()
     func presentAddFriendScreen()
     func showFriendDetailScreenFor(friend: Friend)

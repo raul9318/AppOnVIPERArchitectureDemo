@@ -39,6 +39,7 @@
 		61CB4A7C1FA628A9005DD3B0 /* FriendDetailsWireframeInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61CB4A7B1FA628A9005DD3B0 /* FriendDetailsWireframeInput.swift */; };
 		61CB4A7E1FA62913005DD3B0 /* FriendDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61CB4A7D1FA62913005DD3B0 /* FriendDetailsInteractor.swift */; };
 		61CB4A801FA629ED005DD3B0 /* FriendDetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61CB4A7F1FA629ED005DD3B0 /* FriendDetailsRouter.swift */; };
+		61DC793F1FA72E36003C6C50 /* FriendsListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DC793E1FA72E36003C6C50 /* FriendsListTests.swift */; };
 		61E0BB011FA61E6C00378AF6 /* FriendDetailsViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E0BB001FA61E6C00378AF6 /* FriendDetailsViewInterface.swift */; };
 		61E0BB031FA61EE900378AF6 /* FriendDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61E0BB021FA61EE900378AF6 /* FriendDetails.storyboard */; };
 		61E0BB051FA6210F00378AF6 /* FriendDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E0BB041FA6210F00378AF6 /* FriendDetailsViewController.swift */; };
@@ -101,6 +102,7 @@
 		61CB4A7B1FA628A9005DD3B0 /* FriendDetailsWireframeInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDetailsWireframeInput.swift; sourceTree = "<group>"; };
 		61CB4A7D1FA62913005DD3B0 /* FriendDetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDetailsInteractor.swift; sourceTree = "<group>"; };
 		61CB4A7F1FA629ED005DD3B0 /* FriendDetailsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDetailsRouter.swift; sourceTree = "<group>"; };
+		61DC793E1FA72E36003C6C50 /* FriendsListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsListTests.swift; sourceTree = "<group>"; };
 		61E0BB001FA61E6C00378AF6 /* FriendDetailsViewInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDetailsViewInterface.swift; sourceTree = "<group>"; };
 		61E0BB021FA61EE900378AF6 /* FriendDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FriendDetails.storyboard; sourceTree = "<group>"; };
 		61E0BB041FA6210F00378AF6 /* FriendDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDetailsViewController.swift; sourceTree = "<group>"; };
@@ -185,6 +187,7 @@
 			children = (
 				6179CBA61FA5DDCC00B9FFC8 /* SimpleTestOfAppOnVIPERTests.swift */,
 				6179CBA81FA5DDCC00B9FFC8 /* Info.plist */,
+				61DC793E1FA72E36003C6C50 /* FriendsListTests.swift */,
 			);
 			path = SimpleTestOfAppOnVIPERTests;
 			sourceTree = "<group>";
@@ -593,6 +596,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6179CBA71FA5DDCC00B9FFC8 /* SimpleTestOfAppOnVIPERTests.swift in Sources */,
+				61DC793F1FA72E36003C6C50 /* FriendsListTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
